@@ -1,0 +1,57 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #CBC8C4; /* Fondo principal */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #021826; /* Encabezado */
+    color: #CBC8C4; /* Texto del encabezado */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.contenido {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #CBC8C4; /* Fondo del contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #730202; /* Fondo del menú de navegación */
+    color: #CBC8C4; /* Texto del menú de navegación */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #CBC8C4; /* Enlaces del menú de navegación */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #021826; /* Fondo del pie de página */
+    color: #CBC8C4; /* Texto del pie de página */
+    text-align: center;
+    padding: 10px;
+}
