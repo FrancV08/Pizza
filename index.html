@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Pizzas</title>
+    <title>🍕Pizzeria Tradizione</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header>
-        <h1>Tienda de Pizzas</h1>
+        <h1>Pizzeria La Tradizione</h1>
     </header>
     
     <!-- Menú de navegación -->
@@ -21,38 +21,62 @@
     </nav>
 
     <!-- Contenido principal -->
-    <div class="contenido" id="inicio">
-        <h2>Bienvenido a nuestra tienda de pizzas</h2>
-        <p>Descubre las mejores pizzas hechas con ingredientes frescos y deliciosos.</p>
-        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Imagen de una deliciosa pizza random">
+    <div class="contenido" >
+        <h2 id="inicio">Benvenuti</h2>
+        <p>Sumérgete en un mundo de sabores auténticos y deliciosos. Nuestra variedad de pizzas es insuperable, desde las clásicas Margarita y Pepperoni hasta creaciones especiales como la Hawaiana. Utilizamos ingredientes frescos y de alta calidad, como tomates maduros y mozzarella premium, y cocinamos nuestras pizzas con tradición y pasión en nuestro horno.</p>
+        
+        <p>¿Prefieres quedarte en casa? Ofrecemos entrega a domicilio para que disfrutes de nuestras delicias desde la comodidad de tu hogar.</p>
+            
+        <p>Nuestro ambiente es acogedor y nuestro personal amable te hará sentir como en casa. Además, no te pierdas nuestras ofertas especiales, como la 'Noche de Pizza' y la 'Pizza del Día'.</p>
+            
+        <p>La satisfacción del cliente es nuestro compromiso, y nuestras reseñas positivas lo respaldan. Visítanos en [Ubicación] y consulta nuestros horarios de apertura. Experimenta una auténtica pizzeria donde la calidad y el sabor son nuestra pasión. ¡Esperamos verte pronto en Pizzeria La Tradizione!</p>
     </div>
+
+    <section id="linea">
+        <img src="/Imagenes/Linea.png">
+    </section>
 
     <!-- Menú de Pizzas -->
     <section class="contenido" id="menu">
-        <h2>Nuestro Menú</h2>
-        <ul>
-            <li>
+        <h2 >Nuestras Especialidades</h2>
+        <ul id="especialidades">
+            <div class="pizza">
+                <img src="/Imagenes/Margherita.png">
                 <h3>Pizza Margarita</h3>
-                <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Imagen de una deliciosa pizza Margarita">
-                <p>Tomate, mozzarella, albahaca fresca.</p>
-            </li>
-            <li>
+                <p>Tomate » Albahaca » Mozarella</p>
+                <p>$190.00</p>
+                <p>Experimenta la perfección en cada bocado con nuestra Pizza Margarita: una obra maestra de tomates frescos, mozzarella derretida y albahaca fragante. ¡Sabor que te hará volver por más! 🍕😋</p>
+            </div>
+            <div class="pizza">
+                <img src="/Imagenes/pepperoni.png" alt="Imagen de una deliciosa pizza Pepperoni">
                 <h3>Pizza Pepperoni</h3>
-                <img src="https://images.unsplash.com/photo-1589477500339-82aeb8718167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Imagen de una deliciosa pizza Pepperoni">
-                <p>Tomate, mozzarella, pepperoni.</p>
-            </li>
-            <li>
-                <h3>Pizza Vegetariana</h3>
-                <img src="https://images.unsplash.com/photo-1507273026339-31b655f3752d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Imagen de una deliciosa pizza Pepperoni">
-                <p>Tomate, mozzarella, especias, pimientos, cebolla.</p>
-            </li>
+                <p>Pepperoni » Mozarella</p>
+                <p>$190.00</p>
+                <p>¿Listo para un festín de sabores? Nuestra Pizza Pepperoni te espera con abundante pepperoni crujiente y queso derretido. ¡Satisfacción en cada bocado! 🍕😋</p>
+            </div>
+            <div class="pizza">
+                <img src="/Imagenes/hawaii.png">
+                <h3>Pizza Hawaiana</h3>
+                <p>Piña » Jamon York » Mozarella</p>
+                <p>$190.00</p>
+                <p>"Transporta tu paladar a un paraíso tropical con nuestra Pizza Hawaiana: piña dulce, jamón jugoso y queso fundido. ¡Una explosión de sabor en cada rebanada!" 🍍🍕😋</p>
+            </div>
         </ul>
     </section>
 
+    <section id="linea">
+    <img src="/Imagenes/Linea.png">
+    </section>
+
     <!-- Promociones -->
-    <section class="contenido" id="promociones">
-        <h2>Promociones Especiales</h2>
-        <p>No te pierdas nuestras ofertas especiales en pizzas para llevar. ¡Ahorra mientras disfrutas de la mejor pizza!</p>
+    <section class="contenido" >
+        <h2 id="promociones">Promociones Especiales</h2>
+        <p>Programa de Lealtad: Gana recompensas con cada visita. Acumula puntos y disfruta de descuentos o pizzas gratis como muestra de agradecimiento.</p>
+        <p>Descuento para Estudiantes: Estudiantes, disfruten de un descuento especial en sus pizzas favoritas. Solo presenta tu identificación válida y a disfrutar.</p>
+    </section>
+
+    <section id="linea">
+        <img src="/Imagenes/Linea.png">
     </section>
 
     <!-- Contacto -->

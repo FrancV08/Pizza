@@ -18,20 +18,55 @@ h1 {
 }
 
 .contenido {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #CBC8C4; /* Fondo del contenido */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #CBC8C4;
+}
+#linea img {
+width: 1099px;
+height: 134px;
+display: flex;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+#menu {
+    text-align: center;
 }
 
-p {
-    line-height: 1.6;
+#inicio {
+    text-align: center;
+}
+
+#promociones {
+    text-align: center;
+}
+
+#especialidades{ 
+    display: flex;
+}
+
+.contenido img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+.pizza {
+    max-width: 300px;
+    margin:25px auto;
+    padding: 20px;
+    background-color: #021826; /* Fondo del contenido */
+    border-radius: 5%;
+    color: #CBC8C4;
+}
+
+#llave img {
+    width: 50px;
+    height: 70px;
 }
 
 /* Estilos para el menú de navegación */
