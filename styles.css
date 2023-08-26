@@ -45,14 +45,13 @@ align-items: center;
     text-align: center;
 }
 
-#especialidades{ 
+.pizzasEspecialidades{ 
     display: flex;
 }
 
 .contenido img {
     width: 250px;
     height: 250px;
-    border-radius: 5%;
 }
 
 .pizza {
@@ -62,6 +61,7 @@ align-items: center;
     background-color: #021826; /* Fondo del contenido */
     border-radius: 5%;
     color: #CBC8C4;
+
 }
 
 #llave img {
@@ -90,3 +90,10 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+@media (max-width: 950px) {
+    .pizzasEspecialidades {
+        display: flex;
+        flex-direction: column;
+    }
+  }
