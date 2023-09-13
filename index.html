@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍕Pizzeria Tradizione</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <!-- UTF-8 permite escribir caracteres no usados en el idioma inglés-->
+        <!-- el "charset" es un atributo y el "UTF-8" es el valor del atributo-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🍕Pizzeria Tradizione</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
     <body>
-        <!-- Encabezado -->
-        <header>
+        <!-- Define el encabezado de la pagina (Este si tiene un significado semantico)-->
+        <header class="Logo">
+            <img src="https://lh3.googleusercontent.com/pw/AIL4fc_pUugXiYl9VRVzWWh0vqjdsoQKP5lffJ-cpBj08UNLYprDJas28Hhf4m6rOrmy1G1AytGehZcHmqRMMUV7EF4mdk8WlKZj84o217IbskN6ZLPPOwvlsylOkjCNa0LeRUh8wm6TyJ-UlhOV9ngHFf3xtA=w1051-h790-s-no?authuser=0">
             <h1>Pizzeria La Tradizione</h1>
         </header>
         
@@ -21,6 +24,7 @@
         </nav>
 
         <!-- Contenido principal -->
+        <!-- div es una etiqueta generica para crear contenedores genericos (Contenedor generico sirve para agrupar algo y a nivel semantico no significa nada )-->
         <div class="contenido" >
             <h2 id="inicio">Benvenuti</h2>
             <p>Sumérgete en un mundo de sabores auténticos y deliciosos. Nuestra variedad de pizzas es insuperable, desde las clásicas Margarita y Pepperoni hasta creaciones especiales como la Hawaiana. Utilizamos ingredientes frescos y de alta calidad, como tomates maduros y mozzarella premium, y cocinamos nuestras pizzas con tradición y pasión en nuestro horno.</p>
@@ -37,7 +41,9 @@
             <h2 >Nuestras Especialidades</h2>
             <ul class="pizzasEspecialidades" id="especialidades">
                 <div class="pizza">
-                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc-_VD55Yb0Mp3B7EhCR7qxS8Q4H6Nh9Ch5_huU0pYYPw6A_A4WkrOErtDsaVY-5cjuIoMHLwd6mFtVpQVo_nvLgUY3sWUtqnDw0tLu4YnvCn6T2b9oqM_TzPuRWbL8ik-MneFAyBOwT55jp5UlZkh7PmA=w609-h610-s-no?authuser=0">
+                    <!-- "src" significa source éste es un atributo-->
+                    <!-- "alt" sirve para agregar una descripción para personas limitadas o en caso de que no cargue la imagen-->
+                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc-_VD55Yb0Mp3B7EhCR7qxS8Q4H6Nh9Ch5_huU0pYYPw6A_A4WkrOErtDsaVY-5cjuIoMHLwd6mFtVpQVo_nvLgUY3sWUtqnDw0tLu4YnvCn6T2b9oqM_TzPuRWbL8ik-MneFAyBOwT55jp5UlZkh7PmA=w609-h610-s-no?authuser=0" alt="Imagen de una exquisita pizza Margarita">
                     <h3>Pizza Margarita</h3>
                     <p>Tomate » Albahaca » Mozarella</p>
                     <p>$190.00</p>
@@ -51,7 +57,7 @@
                     <p>¿Listo para un festín de sabores? Nuestra Pizza Pepperoni te espera con abundante pepperoni crujiente y queso derretido. ¡Satisfacción en cada bocado! 🍕😋</p>
                 </div>
                 <div class="pizza">
-                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc-heQJ_z6MfEO2kpHn4bqC3TGRDsivJGd6ZNIuQwv2_onrQCqQMhC_NdbgzwgZXLwesGiFd42OCNS3x6uwyvcG_K8_jVKPLQvc2C5uAM27PQjc6SHtY3qXORv7DUOVNSHrxx1bzH8MQK0jofHX8fpq9qw=w622-h599-s-no?authuser=0">
+                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc-heQJ_z6MfEO2kpHn4bqC3TGRDsivJGd6ZNIuQwv2_onrQCqQMhC_NdbgzwgZXLwesGiFd42OCNS3x6uwyvcG_K8_jVKPLQvc2C5uAM27PQjc6SHtY3qXORv7DUOVNSHrxx1bzH8MQK0jofHX8fpq9qw=w622-h599-s-no?authuser=0" alt="Imagen de una fabulosa pizza Hawaiana">
                     <h3>Pizza Hawaiana</h3>
                     <p>Piña » Jamon York » Mozarella</p>
                     <p>$190.00</p>
@@ -84,9 +90,9 @@
             
             <!-- Sección de redes sociales -->
             <div class="redes-sociales">
-                <a href="https://www.facebook.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc9zxPNmXuWp_QGRUhbSu6VEI3KysBhR-mnteYtFPpAh5RGWxLM_B6VXpfW3Z0T9dFZxbNIV_LPqyP8oKINWBO9cCmkQJiASaGzdE9XzVdakLRJqoCbD0HMTlD3F7Cg-n6BgD8dg-kR35uHnVRPmd1ubWQ=w738-h737-s-no?authuser=0" alt="Facebook"></a>
-                <a href="https://twitter.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc-c7EFqflKWKyeDE0ABsujbtWYL6SjV89QmFLk3ibcTanuNXSaBdS5fNafxlC_JUgZKfvMabLUokOtjb335DkOMU5HAO0lUwecBFjanivk3Nkq1t5g8jk5VywxmN9wAl2ksPcq7LyGOFhdZYyB7fcXQqA=w331-h331-s-no?authuser=0"alt="Twitter"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc9hQYtSPyXI2vRfp5feWAszzgcEd3PvzQmzXHTQHNDXXKRzSx_MLexErRVTItjQCXfKW3014ZAPRn7T4eGx547ATL0UTRT8KMLjonUOoWQYOCuIz2yiebNSkkMSvr7lfU7QcQETZbmfNh8xbMWs80u4ag=w511-h512-s-no?authuser=0"alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc9zxPNmXuWp_QGRUhbSu6VEI3KysBhR-mnteYtFPpAh5RGWxLM_B6VXpfW3Z0T9dFZxbNIV_LPqyP8oKINWBO9cCmkQJiASaGzdE9XzVdakLRJqoCbD0HMTlD3F7Cg-n6BgD8dg-kR35uHnVRPmd1ubWQ=w738-h737-s-no?authuser=0" alt="Unete a nuestro Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc-c7EFqflKWKyeDE0ABsujbtWYL6SjV89QmFLk3ibcTanuNXSaBdS5fNafxlC_JUgZKfvMabLUokOtjb335DkOMU5HAO0lUwecBFjanivk3Nkq1t5g8jk5VywxmN9wAl2ksPcq7LyGOFhdZYyB7fcXQqA=w331-h331-s-no?authuser=0"alt="Visita nuestro Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc9hQYtSPyXI2vRfp5feWAszzgcEd3PvzQmzXHTQHNDXXKRzSx_MLexErRVTItjQCXfKW3014ZAPRn7T4eGx547ATL0UTRT8KMLjonUOoWQYOCuIz2yiebNSkkMSvr7lfU7QcQETZbmfNh8xbMWs80u4ag=w511-h512-s-no?authuser=0"alt="Disfruta de nuestro Instagram"></a>
             </div>
         </footer>
     </body>
