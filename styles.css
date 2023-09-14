@@ -1,4 +1,10 @@
-/* Estilos CSS */
+header {
+    background-color: #021826; /* Encabezado */
+    color: #CBC8C4; /* Texto del encabezado */
+    text-align: center;
+    padding: 20px;
+}
+
 header img {
     width: 150px;
     height: 120px;
@@ -11,15 +17,67 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #021826; /* Encabezado */
-    color: #CBC8C4; /* Texto del encabezado */
-    text-align: center;
-    padding: 20px;
-}
-
 h1 {
     margin: 0;
+}
+
+.bienvenida{
+    display: flex; /* Utiliza Flexbox para disposición */
+    position: relative; /* Establece el contexto de posición para los elementos hijos */
+    align-items: center; /* Centra verticalmente el contenido */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #CBC8C4;
+}
+
+.bienvenida img {
+    flex: 1; /* La imagen ocupa una parte flexible del espacio */
+    width: 1000px;
+    display: flex; /* Hace que el div se comporte como un contenedor flexible */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 6%; /* Aplica un borde redondo del 50% del tamaño de la imagen */
+}
+
+.bienvenida h2,
+.bienvenida p {
+    position: absolute; /* Permite posicionar los elementos de manera absoluta */
+    transform: translate(-50%, -50%); /* Centra los elementos correctamente */
+    padding: 10px; /* Espaciado interior para el texto */
+    margin: 10px 0; /* Espacio entre párrafos */
+    left: 76%; /* Mueve los elementos hacia el centro horizontalmente */
+    right: -23%;
+}
+
+.bienvenida h2 {
+    top: 8%; /* Mueve los elementos hacia el centro verticalmente */
+}
+
+.bienvenida p {
+    width: 450px;
+}
+
+.p1-bienvenida{
+    top: 24%; /* Mueve los elementos hacia el centro verticalmente */
+}
+
+.p2-bienvenida{
+    top: 41%; /* Mueve los elementos hacia el centro verticalmente */
+}
+
+.p3-bienvenida{
+    top: 55%; /* Mueve los elementos hacia el centro verticalmente */
+}
+
+.p4-bienvenida{
+    top: 73%; /* Mueve los elementos hacia el centro verticalmente */
+}
+
+.bienvenida .contenido-bienvenida{
+    flex: 1; /* El contenido ocupa una parte flexible del espacio */
+    padding: 20px; /* Espaciado interior para el contenido */
 }
 
 .contenido {
@@ -28,6 +86,12 @@ h1 {
     padding: 20px;
     color: #CBC8C4;
 }
+
+.contenido img {
+    width: 250px;
+    height: 250px;
+}
+
 #linea img {
 width: 1099px;
 height: 134px;
@@ -52,11 +116,6 @@ align-items: center;
 
 .pizzasEspecialidades{ 
     display: flex;
-}
-
-.contenido img {
-    width: 250px;
-    height: 250px;
 }
 
 .pizza {
@@ -106,7 +165,7 @@ footer {
 
 @media (max-width: 950px) {
     .pizzasEspecialidades {
-        display: flex;
         flex-direction: column;
+        padding: 0px;
     }
   }

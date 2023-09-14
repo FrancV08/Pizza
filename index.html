@@ -10,7 +10,7 @@
     </head>
     <body>
         <!-- Define el encabezado de la pagina (Este si tiene un significado semantico)-->
-        <header class="Logo">
+        <header>
             <img src="https://lh3.googleusercontent.com/pw/AIL4fc_pUugXiYl9VRVzWWh0vqjdsoQKP5lffJ-cpBj08UNLYprDJas28Hhf4m6rOrmy1G1AytGehZcHmqRMMUV7EF4mdk8WlKZj84o217IbskN6ZLPPOwvlsylOkjCNa0LeRUh8wm6TyJ-UlhOV9ngHFf3xtA=w1051-h790-s-no?authuser=0">
             <h1>Pizzeria La Tradizione</h1>
         </header>
@@ -25,15 +25,18 @@
 
         <!-- Contenido principal -->
         <!-- div es una etiqueta generica para crear contenedores genericos (Contenedor generico sirve para agrupar algo y a nivel semantico no significa nada )-->
-        <div class="contenido" >
-            <h2 id="inicio">Benvenuti</h2>
-            <p>Sumérgete en un mundo de sabores auténticos y deliciosos. Nuestra variedad de pizzas es insuperable, desde las clásicas Margarita y Pepperoni hasta creaciones especiales como la Hawaiana. Utilizamos ingredientes frescos y de alta calidad, como tomates maduros y mozzarella premium, y cocinamos nuestras pizzas con tradición y pasión en nuestro horno.</p>
+        <div class="bienvenida" >
+            <img src="https://lh3.googleusercontent.com/pw/AIL4fc-ptpzqjT2xWyjk7QFmDdeHdr13iXuC9r2xZu_qnHc1MQ3Bg0tey9STYBdjxtVvdN9D8UTAZmjbyCoiPKy6neU9bgiL55idiYLP_gvI33803ro6dJhKROU8dnTVYe1WyiVfcT5o2x2kcWbl4_GWZ62enQ=w1103-h552-s-no?authuser=0">
             
-            <p>¿Prefieres quedarte en casa? Ofrecemos entrega a domicilio para que disfrutes de nuestras delicias desde la comodidad de tu hogar.</p>
+            <div class="contenido-bienvenida">
+                <h2 id="inicio">Benvenuti</h2>
+                <p class="p1-bienvenida">Sumérgete en un mundo de sabores auténticos y deliciosos. Nuestra variedad de pizzas es insuperable, desde las clásicas Margarita y Pepperoni hasta creaciones especiales como la Hawaiana. Utilizamos ingredientes frescos y de alta calidad, como tomates maduros y mozzarella premium, y cocinamos nuestras pizzas con tradición y pasión en nuestro horno.</p>
                 
-            <p>Nuestro ambiente es acogedor y nuestro personal amable te hará sentir como en casa. Además, no te pierdas nuestras ofertas especiales, como la 'Noche de Pizza' y la 'Pizza del Día'.</p>
-                
-            <p>La satisfacción del cliente es nuestro compromiso, y nuestras reseñas positivas lo respaldan. Visítanos en [Ubicación] y consulta nuestros horarios de apertura. Experimenta una auténtica pizzeria donde la calidad y el sabor son nuestra pasión. ¡Esperamos verte pronto en Pizzeria La Tradizione!</p>
+                <p class="p2-bienvenida">¿Prefieres quedarte en casa? Ofrecemos entrega a domicilio para que disfrutes de nuestras delicias desde la comodidad de tu hogar.</p>
+                    
+                <p class="p3-bienvenida">Nuestro ambiente es acogedor y nuestro personal amable te hará sentir como en casa. Además, no te pierdas nuestras ofertas especiales, como la 'Noche de Pizza' y la 'Pizza del Día'.</p>
+                    
+                <p class="p4-bienvenida">La satisfacción del cliente es nuestro compromiso, y nuestras reseñas positivas lo respaldan. Visítanos en [Ubicación] y consulta nuestros horarios de apertura. Experimenta una auténtica pizzeria donde la calidad y el sabor son nuestra pasión. ¡Esperamos verte pronto en Pizzeria La Tradizione!</p></div>
         </div>
 
         <!-- Menú de Pizzas -->
@@ -89,11 +92,14 @@
             &copy; 2023 Tienda de Pizzas - Todos los derechos reservados.
             
             <!-- Sección de redes sociales -->
-            <div class="redes-sociales">
-                <a href="https://www.facebook.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc9zxPNmXuWp_QGRUhbSu6VEI3KysBhR-mnteYtFPpAh5RGWxLM_B6VXpfW3Z0T9dFZxbNIV_LPqyP8oKINWBO9cCmkQJiASaGzdE9XzVdakLRJqoCbD0HMTlD3F7Cg-n6BgD8dg-kR35uHnVRPmd1ubWQ=w738-h737-s-no?authuser=0" alt="Unete a nuestro Facebook"></a>
-                <a href="https://twitter.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc-c7EFqflKWKyeDE0ABsujbtWYL6SjV89QmFLk3ibcTanuNXSaBdS5fNafxlC_JUgZKfvMabLUokOtjb335DkOMU5HAO0lUwecBFjanivk3Nkq1t5g8jk5VywxmN9wAl2ksPcq7LyGOFhdZYyB7fcXQqA=w331-h331-s-no?authuser=0"alt="Visita nuestro Twitter"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AIL4fc9hQYtSPyXI2vRfp5feWAszzgcEd3PvzQmzXHTQHNDXXKRzSx_MLexErRVTItjQCXfKW3014ZAPRn7T4eGx547ATL0UTRT8KMLjonUOoWQYOCuIz2yiebNSkkMSvr7lfU7QcQETZbmfNh8xbMWs80u4ag=w511-h512-s-no?authuser=0"alt="Disfruta de nuestro Instagram"></a>
-            </div>
+            <ul class="redes-sociales">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc9zxPNmXuWp_QGRUhbSu6VEI3KysBhR-mnteYtFPpAh5RGWxLM_B6VXpfW3Z0T9dFZxbNIV_LPqyP8oKINWBO9cCmkQJiASaGzdE9XzVdakLRJqoCbD0HMTlD3F7Cg-n6BgD8dg-kR35uHnVRPmd1ubWQ=w738-h737-s-no?authuser=0" alt="Unete a nuestro Facebook"></a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc-c7EFqflKWKyeDE0ABsujbtWYL6SjV89QmFLk3ibcTanuNXSaBdS5fNafxlC_JUgZKfvMabLUokOtjb335DkOMU5HAO0lUwecBFjanivk3Nkq1t5g8jk5VywxmN9wAl2ksPcq7LyGOFhdZYyB7fcXQqA=w331-h331-s-no?authuser=0"alt="Visita nuestro Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://lh3.googleusercontent.com/pw/AIL4fc9hQYtSPyXI2vRfp5feWAszzgcEd3PvzQmzXHTQHNDXXKRzSx_MLexErRVTItjQCXfKW3014ZAPRn7T4eGx547ATL0UTRT8KMLjonUOoWQYOCuIz2yiebNSkkMSvr7lfU7QcQETZbmfNh8xbMWs80u4ag=w511-h512-s-no?authuser=0"alt="Disfruta de nuestro Instagram"></a>
+            </ul>
         </footer>
     </body>
 </html>
