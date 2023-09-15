@@ -144,7 +144,7 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1050px) {
     .pizzasEspecialidades{
         flex-direction: column;
         padding: 0px;
