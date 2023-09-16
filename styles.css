@@ -37,7 +37,7 @@ h1 {
 .bienvenida h2,
 .bienvenida p {
     position: absolute; /* Permite posicionar los elementos de manera absoluta */
-    transform: translate(-100%, -33%); /* Centra los elementos correctamente */
+    transform: translate(120%, -33%); /* Centra los elementos correctamente */
     width: 450px;
 }
 
@@ -144,11 +144,11 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 989px) {
+    
     .pizzasEspecialidades{
         flex-direction: column;
         padding: 0px;
     }
 
-    
-  }
+}
