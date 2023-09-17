@@ -1,3 +1,12 @@
+* {
+    /*Le quita el margen por default de todas las etiquetas con el selector "*" */
+    margin: 0;
+    /*Le quita el padding por default de todas las etiquetas con el selector "*" */
+    padding: 0;
+    /*Hace que todas las etiquetas al agregar cualquier proppiedad haga que crezca la etiqueta sino que ocupa espacio de forma interna con las medidas agregadas  con el selector "*" */
+    box-sizing: border-box;
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -9,7 +18,7 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 90%;
+    font-size: 130%;
 }
 
 header,
@@ -18,7 +27,8 @@ nav,
 .contenido-menu-pizzas,
 .contenido-promociones,
 footer,
-.contenido-contacto{
+.contenido-contacto,
+.menuNavegacion{
     text-align: center;
 }
 
@@ -29,8 +39,8 @@ header {
     padding: 20px;
 }
 
-header img {
-    max-width: 22%;
+.logo-pizza {
+    max-width: 12%;
     height: auto;
 }
 
@@ -121,21 +131,17 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Media query para pantallas más pequeñas */
-@media (max-width: 379px) {
+@media (max-width: 799px) {
+
+    .logo-pizza {
+        max-width: 25%;
+    }
 
     .menuNavegacion {
-        font-size: 84%;
+        font-size: 70%;
+        display: flex;
+        justify-content: center;
     }
     
     .pizzas-Especialidades {
@@ -150,14 +156,16 @@ footer {
 
     .bienvenida h2,
     .bienvenida p {
-        width: 94%;
-        left: 0;
+        left: 28%;
         transform: translate(0, 0);
         font-size: 72%;
-
     }
 
-    .bienvenida h2 { top: -1%; font-size: 95%; }
+    .texto-bienvenida{
+    
+    }
+
+    .bienvenida h2 { top: -1%; font-size: 100%; }
     .p1-bienvenida { top: 3%; }
     .p2-bienvenida { top: 17%; }
     .p3-bienvenida { top: 24%; }
