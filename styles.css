@@ -9,18 +9,45 @@ body {
 
 h1 {
     margin: 0;
+    font-size: 90%;
 }
+
+header,
+nav,
+.bienvenida h2,
+.contenido-menu-pizzas,
+.contenido-promociones,
+footer,
+.contenido-contacto{
+    text-align: center;
+}
+
 
 /* Estilos del encabezado */
 header {
     background-color: #021826;
-    text-align: center;
     padding: 20px;
 }
 
 header img {
     max-width: 22%;
     height: auto;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #730202;
+    padding: 10px;
+}
+
+nav a {
+    color: #CBC8C4;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.menuNavegacion{
+    font-size: 90%;
 }
 
 /* Estilos para el contenedor de bienvenida */
@@ -35,7 +62,6 @@ header img {
 
 #pizzaImg {
     max-width: 100%;
-    height: auto;
     border-radius: 6%;
     display: block;
     margin: 0 auto;
@@ -48,83 +74,97 @@ header img {
     position: absolute;
     transform: translate(116%, -5%);
     width: 44%;
+    font-size: 90%;
 }
 
 /* Estilos para los párrafos superpuestos */
-.bienvenida h2 { top: -3%; text-align: center; }
-.p1-bienvenida { top: 6%; }
+.bienvenida h2 { top: -1%; }
+.p1-bienvenida { top: 6%;  }
 .p2-bienvenida { top: 33%; }
 .p3-bienvenida { top: 47%; }
 .p4-bienvenida { top: 65%; }
 
 /* Estilos para el contenido principal */
-.contenido {
+.contenido-menu-pizzas {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #021826;
     border-radius: 5px;
+    font-size: 90%;
 }
 
-.contenido img {
-    max-width: 100%;
+.contenido-menu-pizzas img {
+    width: 150px;
+    max-width: 56%;
     height: auto;
 }
 
-/* Estilos para la línea */
-#linea img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.pizzas-Especialidades{
+    display: flex;
+    width: 88%;
 }
 
-/* Estilos para el menú de navegación */
-nav {
-    background-color: #730202;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    color: #CBC8C4;
-    text-decoration: none;
-    margin: 0 15px;
+.contenido-promociones{
+    font-size: 80%;
 }
 
 /* Estilos para el pie de página */
 footer {
     background-color: #021826;
-    text-align: center;
     padding: 10px;
 }
 
+.redes-sociales img{
+    max-width: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media query para pantallas más pequeñas */
-@media (max-width: 989px) {
-    .bienvenida {
+@media (max-width: 379px) {
+
+    .pizzas-Especialidades {
         flex-direction: column;
+        align-items: center;
+        width: 73%;
     }
 
     #pizzaImg {
-        width: 100%;
-        height: auto;
+        width: 96%;
     }
 
     .bienvenida h2,
     .bienvenida p {
-        width: 100%;
+        width: 94%;
         left: 0;
         transform: translate(0, 0);
+        font-size: 72%;
+
     }
 
-    .bienvenida h2 { top: 0; }
-    .p1-bienvenida { top: 20%; }
-    .p2-bienvenida { top: 40%; }
-    .p3-bienvenida { top: 60%; }
-    .p4-bienvenida { top: 80%; }
+    .bienvenida h2 { top: -1%; font-size: 95%; }
+    .p1-bienvenida { top: 3%; }
+    .p2-bienvenida { top: 17%; }
+    .p3-bienvenida { top: 24%; }
+    .p4-bienvenida { top: 33%; }
 
-    .pizzasEspecialidades {
-        flex-direction: column;
-        align-items: center;
+    .redes-sociales{
+        width: 250px;
+        height: 40px;
+    }
+
+    .redes-sociales img{
+        max-width: 15%;
     }
 }
