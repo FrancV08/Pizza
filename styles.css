@@ -1,183 +1,130 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #021826;
+    margin: 0;
+    padding: 0;
+    color: #CBC8C4;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos del encabezado */
 header {
-    background-color: #021826; /* Encabezado */
-    color: #CBC8C4; /* Texto del encabezado */
+    background-color: #021826;
     text-align: center;
     padding: 20px;
 }
 
 header img {
-    width: 150px;
-    height: 120px;
+    max-width: 22%;
+    height: auto;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #021826; /* Fondo principal */
-    margin: 0;
-    padding: 0;
-}
-
-h1 { margin: 0; }
-
-.bienvenida{
-    display: flex; /* Utiliza Flexbox para disposición */
-    position: relative; /* Establece el contexto de posición para los elementos hijos */
+/* Estilos para el contenedor de bienvenida */
+.bienvenida {
+    display: flex;
     justify-content: center;
-    align-items: center; /* Esto centrará verticalmente la imagen si es necesario */
+    align-items: center;
+    position: relative;
     max-width: 1000px;
-    color: #CBC8C4;
-    margin:25px auto;
+    margin: 25px auto;
 }
 
 #pizzaImg {
-    width: 1000px;
-    border-radius: 6%; /* Aplica un borde redondo del 50% del tamaño de la imagen */
-    display: block; /* Hacer que la imagen sea un elemento de bloque */
-    margin: 0 auto; /* Establecer un margen horizontal automático */
+    max-width: 100%;
+    height: auto;
+    border-radius: 6%;
+    display: block;
+    margin: 0 auto;
 }
 
+/* Estilos para el texto superpuesto */
 .bienvenida h2,
 .bienvenida p {
-    position: absolute; /* Permite posicionar los elementos de manera absoluta */
-    transform: translate(120%, -33%); /* Centra los elementos correctamente */
-    width: 450px;
+    padding: 10px;
+    position: absolute;
+    transform: translate(116%, -5%);
+    width: 44%;
 }
 
-.bienvenida h2 { top: 8%; /* Mueve los elementos hacia el centro verticalmente */}
-.p1-bienvenida { top: 21%; }
-.p2-bienvenida { top: 41%; }
-.p3-bienvenida { top: 55%; }
-.p4-bienvenida { top: 73%; }
+/* Estilos para los párrafos superpuestos */
+.bienvenida h2 { top: -3%; text-align: center; }
+.p1-bienvenida { top: 6%; }
+.p2-bienvenida { top: 33%; }
+.p3-bienvenida { top: 47%; }
+.p4-bienvenida { top: 65%; }
 
+/* Estilos para el contenido principal */
 .contenido {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    color: #CBC8C4;
+    background-color: #021826;
+    border-radius: 5px;
 }
 
 .contenido img {
-    width: 250px;
-    height: 250px;
+    max-width: 100%;
+    height: auto;
 }
 
+/* Estilos para la línea */
 #linea img {
-width: 1099px;
-height: 134px;
-display: flex;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-#menu { text-align: center; }
-
-#inicio { text-align: center; }
-
-#promociones { text-align: center; }
-
-.pizzasEspecialidades{ display: flex; }
-
-.pizza {
-    max-width: 300px;
-    margin:25px auto;
-    padding: 20px;
-    background-color: #021826; /* Fondo del contenido */
-    border-radius: 5%;
-    color: #CBC8C4;
-
-}
-
-.redes-sociales img{
-    width: 50px;
-    height: 50px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-#llave img {
-    width: 50px;
-    height: 70px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Estilos para el menú de navegación */
 nav {
-    background-color: #730202; /* Fondo del menú de navegación */
-    color: #CBC8C4; /* Texto del menú de navegación */
+    background-color: #730202;
     text-align: center;
     padding: 10px;
 }
 
 nav a {
-    color: #CBC8C4; /* Enlaces del menú de navegación */
+    color: #CBC8C4;
     text-decoration: none;
     margin: 0 15px;
 }
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #021826; /* Fondo del pie de página */
-    color: #CBC8C4; /* Texto del pie de página */
+    background-color: #021826;
     text-align: center;
     padding: 10px;
 }
 
+/* Media query para pantallas más pequeñas */
 @media (max-width: 989px) {
-
-    /* Estilo para el contenedor flex que envuelve la imagen */
     .bienvenida {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative; /* Necesario para posicionar elementos hijos de forma absoluta */
+        flex-direction: column;
     }
 
     #pizzaImg {
-        height: 1000px;
-        width: 500px;
-        border-radius: 6%; /* Aplica un borde redondo del 50% del tamaño de la imagen */
+        width: 100%;
+        height: auto;
     }
 
+    .bienvenida h2,
     .bienvenida p {
-    position: absolute; /* Permite posicionar los elementos de manera absoluta */
-    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente los párrafos */
-    width: 450px;
+        width: 100%;
+        left: 0;
+        transform: translate(0, 0);
     }
 
-    /* Estilo para el texto superpuesto */
-    .p1-bienvenida, .p2-bienvenida, .p3-bienvenida, .p4-bienvenida {
-        text-align: center; /* Centra horizontalmente el texto */
-        padding: 10px; /* Espacio alrededor del texto */
-        border-radius: 5px; /* Bordes redondeados para el texto */
-    }
+    .bienvenida h2 { top: 0; }
+    .p1-bienvenida { top: 20%; }
+    .p2-bienvenida { top: 40%; }
+    .p3-bienvenida { top: 60%; }
+    .p4-bienvenida { top: 80%; }
 
-    /* Estilo para el título h2 */
-    #inicio {
-        top: 0%; /* Ajusta la posición vertical del título */
-        left: 50%; /* Ajusta la posición horizontal del título */
-        transform: translateX(-50%); /* Centra horizontalmente el título */
-        font-size: 24px; /* Tamaño de fuente para el título */
-        width: 80%; /* Anchura máxima para el título */
-    }
-
-    /* Estilo para los párrafos */
-    .p1-bienvenida, .p2-bienvenida, .p3-bienvenida, .p4-bienvenida {
-        top: 50%; /* Ajusta la posición vertical de los párrafos */
-        left: 50%; /* Ajusta la posición horizontal de los párrafos */
-        font-size: 14px; /* Tamaño de fuente para los párrafos */
-        width: 80%; /* Anchura máxima para los párrafos */
-    }
-
-    /* Ajusta las posiciones verticales de los párrafos */
-    .p1-bienvenida { top: 10%; }
-    .p2-bienvenida { top: 20%; }
-    .p3-bienvenida { top: 27%; }
-    .p4-bienvenida { top: 38%; }
-    
-    .pizzasEspecialidades{
+    .pizzasEspecialidades {
         flex-direction: column;
-        padding: 0px;
+        align-items: center;
     }
 }
