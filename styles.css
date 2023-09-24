@@ -36,12 +36,11 @@ footer,
 /* Estilos del encabezado */
 header {
     background-color: #021826;
-    padding: 20px;
+    padding-bottom: 1%;
 }
 
 .logo-pizza {
-    max-width: 12%;
-    height: auto;
+    width: 12%;
 }
 
 /* Estilos para el menú de navegación */
@@ -57,7 +56,7 @@ nav a {
 }
 
 .menuNavegacion{
-    font-size: 90%;
+    font-size: 115%;
 }
 
 /* Estilos para el contenedor de bienvenida */
@@ -71,10 +70,9 @@ nav a {
 }
 
 #pizzaImg {
-    max-width: 100%;
+    width: 110%;
     border-radius: 6%;
     display: block;
-    margin: 0 auto;
 }
 
 /* Estilos para el texto superpuesto */
@@ -83,16 +81,16 @@ nav a {
     padding: 10px;
     position: absolute;
     transform: translate(116%, -5%);
-    width: 44%;
-    font-size: 90%;
+    width: 50%;
+    font-size: 110%;
 }
 
 /* Estilos para los párrafos superpuestos */
-.bienvenida h2 { top: -1%; }
-.p1-bienvenida { top: 6%;  }
-.p2-bienvenida { top: 33%; }
-.p3-bienvenida { top: 47%; }
-.p4-bienvenida { top: 65%; }
+.bienvenida h2 { top: -1%; font-size: 150%; }
+.p1-bienvenida { top: 7%;  }
+.p2-bienvenida { top: 36%; }
+.p3-bienvenida { top: 53%; }
+.p4-bienvenida { top: 74%; }
 
 /* Estilos para el contenido principal */
 .contenido-menu-pizzas {
@@ -104,19 +102,25 @@ nav a {
     font-size: 90%;
 }
 
+.contenido-menu-pizzas h3{
+    font-size: 200%;
+    padding-left: 14%;
+    padding-bottom: 2%;
+}
+
 .contenido-menu-pizzas img {
-    width: 150px;
-    max-width: 56%;
+    width: 178px;
     height: auto;
 }
 
 .pizzas-Especialidades{
     display: flex;
-    width: 88%;
+    width: 108%;
 }
 
 .contenido-promociones{
     font-size: 80%;
+    padding-bottom: 2%;
 }
 
 /* Estilos para el pie de página */
@@ -126,7 +130,7 @@ footer {
 }
 
 .redes-sociales img{
-    max-width: 5%;
+    max-width: 3%;
 }
 
 
@@ -134,8 +138,18 @@ footer {
 /* Media query para pantallas más pequeñas */
 @media (max-width: 799px) {
 
+    header {
+        padding-left: 0%;
+        padding-right: 1%;
+        padding-bottom: 1%;
+    }
+
     .logo-pizza {
         max-width: 20%;
+    }
+
+    nav {
+        padding-left: 1%;
     }
 
     h1 {
@@ -159,6 +173,8 @@ footer {
 
     #pizzaImg {
         width: 90%;
+        margin: 0 auto;
+
     }
 
     .bienvenida h2 { top: 0%; font-size: 120%; width: 43%; }
@@ -169,6 +185,7 @@ footer {
 
     .contenido-menu-pizzas h3{
         font-size: 170%;
+        padding-left: 2%;
     }
     
     .pizzas-Especialidades {
@@ -207,9 +224,17 @@ footer {
 }
 
 @media (max-width: 379px) {
+    header {
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
 
     .logo-pizza {
         max-width: 20%;
+    }
+
+    nav {
+        padding-left: 4%;
     }
 
     h1 {
@@ -228,6 +253,7 @@ footer {
     .contenido-menu-pizzas h3{
         padding-bottom: 0%;
         font-size: 140%;
+        padding-left: 3%;
     }
     
     .pizzas-Especialidades {
